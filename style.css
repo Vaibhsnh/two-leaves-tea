@@ -1,0 +1,111 @@
+@font-face {
+  font-family: font-primary;
+  src: url(assets/fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+  font-family: font-secondary;
+  src: url(assets/fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
+@font-face {
+  font-family: font-accent;
+  src: url(assets/fonts/RobotoMono-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.announcement-bar {
+  background-color: #2a2857;
+  height: calc(100% - 96%);
+  width: 100%;
+  color: white;
+  font-family: font-accent;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------------ Navbar ------------------*/
+
+nav {
+  height: 12%;
+  padding: 15px 15px;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1.5px solid black;
+  background-color: #FFFEFB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*--------------------- Nav-Items-Left ------------------*/
+.nav-items-left{
+    height: 100%;
+    width: clamp(10rem, 30vw, 40rem);
+    font-family: font-primary;
+    padding: 0px 1.5rem;
+    font-size: clamp(1.5rem, 1.8rem, 2rem);   
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-items span{
+    border-radius: 50%;
+    background-color: #C0DBFF;
+    border: 1.5px solid black;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-review span{
+    border: none;
+    background-color: transparent;
+}
+
+.nav-review i{ 
+    color: #FFB500;
+}
+
+.nav-logo{
+    height: 100%;
+    width: clamp(25rem, 15vw, 20rem);
+    background-color: yellow;
+}
+
+.logo img{
+    height: 4rem;
+    width: 100%;
+    object-fit: contain;
+    padding: 8px 0px;
+}
+
+.nav-items-right{
+    height: 100%;
+    width: clamp(10rem, 30vw, 30rem);
+    background-color: aqua;
+}
