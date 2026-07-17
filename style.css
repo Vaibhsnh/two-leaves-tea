@@ -68,6 +68,13 @@ body {
   height: 100%;
   width: 100%;
   background-color: #FBF9EB;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .announcement-bar {
@@ -219,4 +226,53 @@ main{
   background-color: white;
   color: black;
   cursor: pointer;
+}
+
+/*-------------------- featured-products-section -----------------*/
+
+.featured-products{
+  height: 140vh;
+  width: 100%;
+}
+
+.featured-product-intro{
+  height: calc(140vh - 60%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-product-title {
+  font-family: font-primary;
+  font-size: clamp(2rem, 4vw, 7rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.featured-cta-tag {
+  height: calc(140vh - 60% -95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-tag {
+  height: clamp(3.2rem, 4.8vw, 8rem);
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: var(--lavender-brand-tag);
+  padding: var(--brand-tag-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(12rem, 18vw, 40rem);
+  transform: rotate(-3deg);
+}
+
+.featured-tag-title {
+  font-family: font-secondary;
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-weight: 700;
 }
