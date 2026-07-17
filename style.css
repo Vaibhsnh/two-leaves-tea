@@ -13,6 +13,50 @@
   src: url(assets/fonts/RobotoMono-Regular.ttf);
 }
 
+@font-face {
+  font-family: font-display;
+  src: url(assets/fonts/figtree.woff2);
+}
+
+:root {
+  /*------------- colors -------------*/
+  --primary-cta-color: #2a2857;
+  --primary-brand-color: #C1EE91;
+  --primary-brand-dark-color: #C0E571;
+  --secondary-brand-color: #C8E892;
+  --accent-brand-color: #B0E8C1;
+  --display-brand-color: #c0dbff;
+  --natural-brand-dark-color: #FFCB96;
+  --natural-brand-light-color: #FFD1B8;
+
+  --lavender-brand-tag: #DAAEEA;
+  --orange-brand-tag: #FF7F31;
+  --green-brand-tag: #73BC25;
+  --gold-brand-tag: #FFB500;
+
+  --brand-testimonials-light-orange: #F5AF8A;
+  --brand-testimonials-green: #ABDF74;
+  --brand-testimonials-light-yellow: #FFD265;
+  --brand-testimonials-light-green: #ADE674;
+  --brand-testimonials-lavender: #D9C2E1;
+
+  --testimonials-footer-red: #EA6D44;
+  --testimonials-footer-green:#73BC25;
+  --testimonials-footer-gold: #FFB500;
+  --testimonials-footer-lavender: #C790DB;
+
+  /*------------- padding ------------*/
+  --cta-btn-padding: 1rem 4rem;
+  --brand-tag-padding: 5px;
+  --brand-explore-padding: 8px 15px;
+
+  /*------------ font-size -----------*/
+  --cta-btn-font-size: 1.2rem;
+
+  /*-------------- font-weight ----------*/
+  --cta-btn-font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +67,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #FBF9EB;
 }
 
 .announcement-bar {
@@ -36,13 +81,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 /*------------------ Navbar ------------------*/
 
 nav {
   height: 12%;
+  width: 100%;
   padding: 15px 15px;
+  position: fixed;
+  top: calc(100% - 96%);
 }
 
 .navbar {
@@ -121,3 +170,53 @@ nav {
   font-size: 2rem;
 }
 
+/*--------------- main --------------*/
+
+main{
+  height: 100vh;
+  width: 100%;
+}
+
+.main{
+  height: calc(100vh - 5%);
+  width: 100%;
+  background-image: url("assets/images/cere-memorial_matcha_wide.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 1.5rem;
+  padding: 40px;
+}
+
+.main-heading{
+  font-size: clamp(3.5rem, 6vw, 10rem);
+  font-weight: 200;
+  font-family: font-primary;
+}
+
+.main-subtitle{
+  font-size: 1.2rem;
+  font-family: font-display;
+}
+
+.main-cta-btn{
+  padding: var(--cta-btn-padding);
+  font-size: var(--cta-btn-font-size);
+  font-weight: var(--cta-btn-font-weight);
+  background-color: var(--primary-cta-color);
+  color: white;
+  border-radius: 10rem;
+  border: none;
+  transition: .3s ease;
+}
+
+.main-cta-btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
