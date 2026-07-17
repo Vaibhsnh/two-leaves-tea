@@ -89,6 +89,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 10;
 }
 
 /*------------------ Navbar ------------------*/
@@ -99,6 +100,7 @@ nav {
   padding: 15px 15px;
   position: fixed;
   top: calc(100% - 96%);
+  z-index: 10;
 }
 
 .navbar {
@@ -231,12 +233,12 @@ main{
 /*-------------------- featured-products-section -----------------*/
 
 .featured-products{
-  height: 140vh;
+  height: 160vh;
   width: 100%;
 }
 
 .featured-product-intro{
-  height: calc(140vh - 60%);
+  height: 30%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -252,7 +254,7 @@ main{
 }
 
 .featured-cta-tag {
-  height: calc(140vh - 60% -95%);
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,4 +277,26 @@ main{
   font-family: font-secondary;
   font-size: clamp(2.5rem, 4vw, 6rem);
   font-weight: 700;
+}
+
+.featured-products-slider {
+  height: 50%;
+  overflow-x: auto;
+  background-color: gold;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 2rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.featured-products-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  height: clamp(32rem, 65vh, 80rem);
+  width: clamp(28rem, 22vw, 60rem);
+  flex-shrink: 0;
+  background-color: rosybrown;
 }
