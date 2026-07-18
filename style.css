@@ -1036,6 +1036,180 @@ main {
     background:var(--primary-cta-color);
     color: white;
 }
+
+/*-------------------BARISTA LATTES------------------*/
+
+.barista-section{
+    position:relative;
+    width:100%;
+    min-height:clamp(70rem,150vh,90rem);
+    background:#9a6329;
+    overflow:hidden;
+}
+
+/*------------------ Header ---------------*/
+
+.barista-header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:clamp(.8rem,1vw,1rem);
+    padding-top:clamp(5rem,8vw,7rem);
+}
+
+.section-tag--latte{
+    background:#f7c18d;
+}
+
+.barista-title{
+    font-family:var(--label-font);
+    font-size:clamp(3.5rem,6vw,6.5rem);
+    font-weight: 400;
+    color:#fff;
+    text-align:center;
+    line-height:.95;
+}
+
+.barista-subtitle{
+    font-family:var(--mono-font);
+    color:#fff;
+    font-size:clamp(.75rem,.8vw,.9rem);
+    letter-spacing:.08em;
+}
+
+/*--------------- Badge -----------------*/
+
+.barista-badge{
+    position:absolute;
+    top:2rem;
+    right:2rem;
+    width:clamp(6rem,8vw,8rem);
+}
+
+.barista-badge img{
+    width:100%;
+    display:block;
+}
+
+/*----------------------- Showcase ----------------*/
+
+.barista-showcase{
+    position:relative;
+    margin-top:clamp(5rem,7vw,6rem);
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*------------------- Card ----------------*/
+
+.barista-card{
+    width:min(1700px,98%);
+    min-height:clamp(32rem,45vw,38rem);
+    background:#ffd09a;
+    border:var(--border);
+    border-radius:1rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    padding:clamp(2rem,3vw,3rem);
+}
+
+/*------------------------ Product --------------------*/
+
+.barista-product{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.barista-product img{
+    width:clamp(20rem,32vw,30rem);
+}
+
+/*------------------------ Info ---------------------*/
+
+.barista-info{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:clamp(1rem,2vw,1.6rem);
+}
+
+.product-tag{
+    display:inline-flex;
+    padding:.4rem .8rem;
+    background:#f7b46c;
+    border:var(--border);
+    border-radius:.35rem;
+    font-family:var(--label-font);
+    font-size:clamp(2rem,2.5vw,3rem);
+    transform:rotate(-2deg);
+}
+
+.barista-info h3{
+    font-family:var(--heading-font);
+    font-size:clamp(3rem,5vw,5.5rem);
+    line-height:.95;
+    font-weight:300;
+}
+
+.barista-info p{
+
+    max-width:32rem;
+    font-family:var(--body-font);
+    font-size:clamp(1.1rem,1.3vw,1.4rem);
+    line-height:1.5;
+}
+
+.barista-btn{
+    padding:
+    clamp(.9rem,1vw,1rem)
+    clamp(3rem,4vw,4rem);
+    border-radius:999px;
+    background:#fff;
+    font-family: var(--body-font);
+    font-weight: 500;
+    font-size:clamp(1rem,1vw,1.1rem);
+    transition: .25s ease;
+}
+
+.barista-btn:hover{
+  background-color: var(--primary-cta-color);
+  color: white;
+}
+/*---------------------- Slider Buttons ----------------------*/
+
+.slider-btn{
+    position:absolute;
+    width:clamp(3rem,3.5vw,3.5rem);
+    height:clamp(3rem,3.5vw,3.5rem);
+    border-radius:50%;
+    background:#fff;
+    border:var(--border);
+    display:grid;
+    place-items:center;
+    z-index:5;
+    transition: .25s ease;
+}
+
+.slider-btn i{
+    font-size:1.6rem;
+}
+
+.slider-btn--left{
+    left:2rem;
+}
+
+.slider-btn--right{
+    right:2rem;
+}
+
+.slider-btn:hover{
+  background-color: var(--primary-cta-color);
+  color: white;
+}
 /*----------------------COMMON UTILITIES--------------------*/
 
 .rating,
