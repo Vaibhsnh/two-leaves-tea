@@ -408,14 +408,6 @@ main {
   font-size: 0.9rem;
 }
 
-.featured-cta-btn {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .product-add-btn {
   display: flex;
   flex-direction: column;
@@ -493,4 +485,10 @@ main {
   cursor: pointer;
 }
 
-
+.featured-cta-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
